@@ -1,0 +1,83 @@
+/* Header */
+header {
+
+    // Mobile navigation menu //
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+
+        // Hide the links inside the navigation menu (except for logo/home) //
+        #myLinks { 
+            display: none;
+        }
+
+        // Style navigation menu links //
+        a { 
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            @include link-hover(bold, black, whitesmoke);
+        }
+
+        // Style the hamburger menu //
+        a.icon { 
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        // Style the active link (or home/logo) //
+        .active { 
+            background-color: $menu-background;
+            color: black;
+        }
+    }
+
+    // Desktop navigation menu //
+    @media only screen and (min-width: $breakpoint-phone)  {
+        .mobile-nav {
+            display: none;
+        }
+
+        .desktop-nav { 
+            background-color: whitesmoke;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            p {
+                margin-left: 5%;
+                font-size: 2rem;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                display: flex;
+                justify-content: end;
+            }
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: lightgray;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "gulp-webserver": "^0.9.1"
+  }
+}

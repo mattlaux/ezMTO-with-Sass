@@ -1,0 +1,25 @@
+@import "../helpers/variables";
+
+/* Components */
+.button {
+    border-radius: 4px;
+        background-color: $bootstrap-blue;
+        color: white;
+        padding: 1%;
+        font-size: 1rem;
+    
+        [href] {
+            color: white;
+        }
+}
+
+#fixed-menu {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    display: none;
+
+    @media only screen and (min-width: $breakpoint-phone) {
+        display: block;
+    }
+}

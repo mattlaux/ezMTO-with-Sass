@@ -1,0 +1,23 @@
+@mixin text-header($text-transform: lowercase, $margin-top: 0%, $margin-bottom: 0%){
+    text-transform: $text-transform;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin link-hover($font-weight, $color: inherit, $background-color: inherit) {
+    &:hover {
+        font-weight: $font-weight;
+        color: $color;
+        background-color: $background-color;
+    }
+}
+
+@mixin image-container() {
+    overflow: hidden;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}

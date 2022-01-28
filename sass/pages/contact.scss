@@ -1,0 +1,22 @@
+@import "../helpers/placeholders";
+
+/* Contact Page Styles */
+.contact {
+    background-image: url(../../Media/Construction-Site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    h1 {
+        margin: 0%;
+        padding: 2%;
+    }
+
+    .contact-form {
+        header {
+            @extend %center;
+            width: 60%;
+        }   
+    }
+}
